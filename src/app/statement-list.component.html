@@ -1,0 +1,7 @@
+<ul class="statements">
+	<li *ngFor="let statement of statements">
+		<statement-display [statement]="statement"></statement-display>
+	</li>
+
+	<a [routerLink]="['/']">Let me vote!</a>
+</ul>

@@ -1,0 +1,5 @@
+<div>
+	<div class="statement-text">{{statement.text}}</div>
+	<meter class="rtl" max="{{this.calculateVoteSum()}}" value="{{statement.illegalVotes}}"></meter>
+	<meter max="{{this.calculateVoteSum()}}" value="{{statement.frownedUponVotes}}"></meter>
+</div>

@@ -1,0 +1,10 @@
+<div *ngIf="statement">
+  <div>
+    <statement-display [statement]=this.statement></statement-display>
+    <button (click)="illegal()">Totally illegal!</button> <button (click)="frownedUpon()">Just frowned upon</button>
+  </div>
+  <div>
+    <a [routerLink]="['/list']">See list of statements</a>
+    <a [routerLink]="['/add']">Something is missing!</a>
+  </div>
+</div>
